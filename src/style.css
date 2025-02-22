@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+  font-family: 'Franklin Gothic Heavy';
+  src: url('/fonts/Franklin_Gothic_Heavy.ttf') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Franklin Gothic Demy';
+  src: url('/fonts/Franklin_Gothic_Demi.ttf') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Franklin Gothic Book';
+  src: url('/fonts/Franklin_Gothic_Book.ttf') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #292027;
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /* position: fixed;
+  inset: 0; */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 102px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.subtitle-one {
+  font-family: 'Franklin Gothic Demy', sans-serif;
+  font-size: 43px;
+  line-height: 104%;
+  background: linear-gradient(90deg, #ef7614 0%, #f8ab1a 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle-two {
+  font-family: 'Franklin Gothic Demy', sans-serif;
+  color: #fff;
+  font-size: 43px;
+  line-height: 104%;
+}
+
+.subtitle-three {
+  font-family: 'Franklin Gothic Heavy', sans-serif;
+  font-size: 70px;
+  background: linear-gradient(90deg, #ef7614 0%, #f8ab1a 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.course-box {
+  font-family: 'Franklin Gothic Heavy', sans-serif;
+  background: linear-gradient(90deg, #ef7614 0%, #f8ab1a 100%);
+  width: 850px;
+  max-width: 100%;
+  height: 133px;
+  padding: 7px 36px;
+  font-size: 45px;
+  line-height: 133%;
+  text-align: center;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 108px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 68px;
+  margin-bottom: 108px;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.features li {
+  font-family: 'Franklin Gothic Book', sans-serif;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 27px;
+  font-size: 43px;
+  line-height: 102%;
+  color: #fff;
+}
+
+
+.cta-button {
+  font-family: 'Franklin Gothic Demy', sans-serif;
+  max-width: 605px;
+  width: 100%;
+  height: 171px;
+  padding: 31px 29px;
+  background: linear-gradient(90deg, #ef7614 0%, #f8ab1a 100%);
+  text-decoration: none;
+  font-size: 48px;
+  color: #fff;
+  transition: all 1s ease;
+  -webkit-transition: all s ease;
+  -moz-transition: all s ease;
+  -ms-transition: all s ease;
+  -o-transition: all s ease;
+}
+
+.cta-button:hover {
+  background: linear-gradient(to right, #ffae42, #ff8c00);
+}
+
+/* ======== Адаптация для планшетов (до 1024px) ======== */
+@media (max-width: 1024px) {
+
+  body {
+    padding: 70px 70px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .course-box {
+    font-size: 34px;
+    line-height: 133%;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: auto;
+  }
+
+  .logo {
+    width: 200px;
+    height: 150px;
+  }
+
+  .subtitle-one {
+    font-size: 36px;
+  }
+
+  .subtitle-two {
+    font-size: 36px;
+  }
+
+  .subtitle-three {
+    font-size: 36px;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  .features li {
+    width: 100%;
+    font-size: 32px;
+    line-height: 110%;
+    gap: 20px;
+  }
+
+  .icon {
+    width: 42px;
+    height: 28px;
+  }
+
+  .cta-button {
+    max-width: 405px;
+    width: 100%;
+    height: auto;
+    padding: 31px 29px;
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    font-size: 26px;
+  }
+}
+
+/* ======== Адаптация для мобильных устройств (до 768px) ======== */
+@media (max-width: 768px) {
+  body {
+    padding: 50px 20px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .hero {
+    margin-bottom: 50px;
+  }
+
+  .course-box {
+    font-size: 26px;
+    line-height: 133%;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: auto;
+  }
+
+  .logo {
+    width: 150px;
+    height: 100px;
+  }
+
+  .subtitle-one {
+    font-size: 28px;
+  }
+
+  .subtitle-two {
+    font-size: 26px;
+  }
+
+  .subtitle-three {
+    font-size: 28px;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .features li {
+    width: 100%;
+    font-size: 20px;
+    line-height: 102%;
+    gap: 10px
+  }
+
+  .icon {
+    width: 32px;
+    height: 18px;
+  }
+
+  .cta-button {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    font-size: 26px;
+  }
+}
